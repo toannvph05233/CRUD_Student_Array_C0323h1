@@ -5,6 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ManagerStudent managerStudent = new ManagerStudent();
         while (true) {
+            System.out.println("---------------------------------------------------");
             System.out.println("Quản Lý Sinh Viên");
             System.out.println("1. Hiển Thị");
             System.out.println("2. Thêm Sinh Viên");
@@ -23,9 +24,11 @@ public class Main {
                     break;
                 case 3:
                     // sửa: nhập id muốn sửa
+                    managerStudent.edit();
                     break;
                 case 4:
                     // xóa theo id;
+                    managerStudent.delete();
                     break;
                 case 5:
                     System.exit(0);
